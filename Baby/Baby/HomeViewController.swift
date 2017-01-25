@@ -18,19 +18,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.automaticallyAdjustsScrollViewInsets = false
         let layout = UICollectionViewFlowLayout.init()
-        zyCollectionView = UICollectionView.init(frame: self.view.bounds, collectionViewLayout: layout)
+        var rect = self.view.bounds;
+        rect.origin.y = 64;
+        rect.size.height = ZYConstants.SCREENHEIGHT - 64 - 49;
+        zyCollectionView = UICollectionView.init(frame: rect, collectionViewLayout: layout)
         zyCollectionView.backgroundColor = UIColor.cyan
         zyCollectionView.delegate = self
         zyCollectionView.dataSource = self
-        zyCollectionView.register(HotRecommendCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellHot)
-        zyCollectionView.register(InsuranceCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellInsurance)
-        zyCollectionView.register(AppreciationCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellAppreciation)
-        zyCollectionView.register(GasolineCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellGasoline)
-        zyCollectionView.register(InsureCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellInsure)
-        zyCollectionView.register(MoreCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellMore)
+        zyCollectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: ZYConstants.CellID)
         zyCollectionView.register(HomeBannerViewCollectionReusableView.classForCoder(), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView")
-        zyCollectionView.register(MoreCollectionReusableView.classForCoder(), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "MoreHeader")
         self.view.addSubview(zyCollectionView)
         
         let path = Bundle.main.path(forResource: "Home", ofType: "")
@@ -58,11 +56,8 @@ extension HomeViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
         if section == 0 {
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: HeadViewHeight)
-        } else if section == 5 {
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 50)
+            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 150)
         }
-        
         return CGSize.zero
     }
     
@@ -72,8 +67,6 @@ extension HomeViewController : UICollectionViewDelegateFlowLayout {
         return CGSize.zero
     }
     
-    
-  
     /**
      *  设定指定区内Cell的最小行距
      */
@@ -96,26 +89,27 @@ extension HomeViewController : UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+   
+        var model:HomeSectionItemModel = (response?.data![indexPath.section])!
+        let itemArrat =  model.rows;
         
-        
-        
-        if indexPath.section == 0 {
+        var y:CGFloat = 0;
+        var currentRow = 1;
+        var lastHeight:CGFloat = 0;
+        for var array in itemArrat! {
             
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 200)
-        } else if indexPath.section == 1 {
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 300)
-        } else if indexPath.section == 2 {
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 150)
-        } else if indexPath.section == 3 {
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 250)
-        }  else if indexPath.section == 4 {
-            return CGSize.init(width: ZYConstants.SCREENWIDTH, height: 250)
-        } else if indexPath.section == 5 {
-            return CGSize.init(width: 60, height: 60)
+            for index in 0..<array.count {
+                let height = ZYConstants.SCREENWIDTH/ZYCoreUtils.StringToCGFloat(str:array[index].BlockWithHeightProportionSum!)
+                if currentRow != Int(array[index].VersionAreaRow!) {
+                    currentRow = Int(array[index].VersionAreaRow!)
+                    y += lastHeight;
+                }
+                lastHeight = height;
+            }
         }
-        return CGSize.zero
+        
+        return CGSize.init(width: ZYConstants.SCREENWIDTH, height: lastHeight + y)
     }
     
     
@@ -151,23 +145,8 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
      *  返回指定区(section)包含的数据源条目数(number of items)，该方法必须实现
      */
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        
-        if section == 0 {
-            return 1;
-        } else if section == 1 {
-            return 1;
-        } else if section == 2 {
-            return 1;
-        } else if section == 3 {
-            return 1;
-        } else if section == 4 {
-            return 1;
-        } else if section == 5 {
-            return 8;
-        }
-        
-        return 0
+ 
+        return 1
     }
     
     /**
@@ -178,35 +157,10 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
 
         var cell:UICollectionViewCell! = UICollectionViewCell.init()
         
-        if indexPath.section == 0 {
-            let topItems:Array<HomeItemModel> = (response?.data![indexPath.section].rows![0])!;
-            let bottomItem:Array<HomeItemModel> = (response?.data![indexPath.section].rows![1])!;
-
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellHot, for: indexPath) as! HotRecommendCollectionViewCell
-            if let cell = cell as? HotRecommendCollectionViewCell{
-                cell.topImageView.sd_setImage(with: URL.init(string: topItems[0].BlockBackgroupImgUrl!))
-                cell.leftImageView.sd_setImage(with: URL.init(string: bottomItem[0].BlockBackgroupImgUrl!))
-                cell.rightImageView.sd_setImage(with: URL.init(string: bottomItem[1].BlockBackgroupImgUrl!))
-            }
-            
-        } else if indexPath.section == 1 {
-            
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellInsurance, for: indexPath) as! InsuranceCollectionViewCell
-        } else if indexPath.section == 2 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellAppreciation, for: indexPath) as! AppreciationCollectionViewCell
-        } else if indexPath.section == 3 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellGasoline, for: indexPath) as! GasolineCollectionViewCell
-        } else if indexPath.section == 4 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellInsure, for: indexPath) as! InsureCollectionViewCell
-        } else if indexPath.section == 5 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellMore, for: indexPath) as! MoreCollectionViewCell
-            if let cell = cell as? MoreCollectionViewCell{
-                cell.icon = #imageLiteral(resourceName: "icon40")
-                cell.content = "abcd"
-            }
+        cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellID, for: indexPath) as! HomeCollectionViewCell
+        if let cell = cell as? HomeCollectionViewCell{
+            cell.model = response?.data![indexPath.section]
         }
-
-
         return cell
     }
     
@@ -217,9 +171,6 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         var reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView", for: indexPath)
         
-        if indexPath.section == 5 {
-            reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "MoreHeader", for: indexPath)
-        }
         return reusableView
     }
 }

@@ -44,7 +44,7 @@ class HomeBannerViewCollectionReusableView: UICollectionReusableView {
         
         pageControl.snp.makeConstraints({(make)->Void in
             
-            make.top.equalTo(self.snp.bottom).offset(-50)
+            make.top.equalTo(self.snp.bottom).offset(-30)
             make.left.equalTo(self.snp.right).offset(-60)
             make.width.equalTo(40)
             make.height.equalTo(25)
@@ -93,7 +93,7 @@ class HomeBannerViewCollectionReusableView: UICollectionReusableView {
             pageControl?.numberOfPages = 4
             pageControl.currentPage = 0
             pageControl.currentPageIndicatorTintColor = UIColor.cyan
-            pageControl.backgroundColor = UIColor.black
+
             self.addSubview(pageControl!)
         }
         

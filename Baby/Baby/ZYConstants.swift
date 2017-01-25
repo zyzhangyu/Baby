@@ -34,19 +34,8 @@ class ZYConstants: NSObject {
     
     /**
      *   HomeViewController中Collectionview注册的Cell
-     *
-     *  CellHot 热门推荐
-     *  CellInsurance 延保专区
-     *  CellAppreciation 延保增值服务
-     *  CellGasoline 加油专区
-     *  CellInsure 保险专区
-     *  CellMore 更多功能
      **/
-    static let CellHot = "hot"
-    static let CellInsurance = "insurance"
-    static let CellAppreciation = "appreciation"
-    static let CellGasoline = "gasoline"
-    static let CellInsure = "insure"
-    static let CellMore = "more"
+    static let CellID = "cell"
+
 
 }

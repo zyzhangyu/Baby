@@ -18,5 +18,19 @@ class ZYCoreUtils: NSObject {
     static func BabyColor(_ r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat)->(UIColor){
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a);
     }
+    
+    
+    static func StringToCGFloat(str:String)->(CGFloat){
+        
+        let string = str
+        var cgFloat: CGFloat = 0
+        
+        
+        if let doubleValue = Double(string)
+        {
+            cgFloat = CGFloat(doubleValue)
+        }
+        return cgFloat
+    }
 
 }
