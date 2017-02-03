@@ -31,13 +31,59 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Baby/HomeCollectionViewCell.swift"
-            timestampString = "507025704.110104"
+            filePath = "Baby/HomeViewController.swift"
+            timestampString = "507800913.600863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "clickImageView()"
+            startingLineNumber = "202"
+            endingLineNumber = "202">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Baby.HomeViewController.clickImageview (Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Baby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangyu/Documents/GitHub/Baby/Baby/Baby/HomeViewController.swift"
+                  timestampString = "507785632.303776"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Baby.HomeViewController.clickImageview (Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Baby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangyu/Documents/GitHub/Baby/Baby/Baby/HomeViewController.swift"
+                  timestampString = "507785632.346093"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Baby/HomeCollectionViewCell.swift"
+            timestampString = "507800177.222281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "init(frame:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

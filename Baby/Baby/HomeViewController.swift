@@ -160,6 +160,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZYConstants.CellID, for: indexPath) as! HomeCollectionViewCell
         if let cell = cell as? HomeCollectionViewCell{
             cell.model = response?.data![indexPath.section]
+            cell.delegate = self
         }
         return cell
     }
@@ -175,4 +176,22 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
+extension HomeViewController:HomeCollectionViewCellDelegate {
+    
+    func clickImageview(_ string: String?) {
+        
+        if let str = string {
+            
+            switch str {
+            case "http://chewawa.cn/wawaowner_verify":
+                
+                let sb = UIStoryboard.init(name: "SimpleStoryboard", bundle: Bundle.main)
+                let vc = sb.instantiateViewController(withIdentifier: "AttertationViewController")
+                navigationController?.pushViewController(vc, animated: true)
+            default:
+                print("default")
+            }
+        }
+    }
+}
 

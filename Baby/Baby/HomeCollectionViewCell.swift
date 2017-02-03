@@ -8,13 +8,12 @@
 
 import UIKit
 
-//我现在还不会这么写闭包传值，但是大概的样子还是知道的！
-typealias clickImageViewClosure = () -> Void
+
 
 //这里我准备写一个协议，让Controller成为协议的执行者，这样符合MVC
 protocol HomeCollectionViewCellDelegate:NSObjectProtocol {
     
-    func clickImageview(_ model: HomeItemModel)
+    func clickImageview(_ string: String?)
 }
 
 
@@ -22,6 +21,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
 
     var rects:[CGRect] = [CGRect]()
     var imageViews:[UIImageView] =  [UIImageView]()
+    var delegate:HomeCollectionViewCellDelegate?
     
     var model:HomeSectionItemModel? {
         
@@ -59,18 +59,19 @@ class HomeCollectionViewCell: UICollectionViewCell {
                     imageViews.append(imageView)
                     self.contentView.addSubview(imageView)
                     lastHeight = height;
-                    let tap:UIGestureRecognizer = UIGestureRecognizer.init(target: self, action: #selector(HomeCollectionViewCell.clickImageView))
+                    let tap:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(HomeCollectionViewCell.clickImageView(_:)))
+                    tap.blockURL = array[index].BlockUrl
                     imageView.addGestureRecognizer(tap)
+                    
                 }
             }
         }
     }
     
     
-    func clickImageView() {
+    func clickImageView(_ tap:UITapGestureRecognizer) {
         
-        print("点击了一个ImageView")
-        //???? 现在控制台显示的是，collectionview的代理方法，没有运行到这个新加的方法，我要研究一会了！
+        delegate?.clickImageview(tap.blockURL)
     }
     
     
@@ -93,6 +94,22 @@ class HomeCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
 
-
+extension UITapGestureRecognizer {
+    
+    private struct AssociatedKeys {
+        static var kTapBlockURL = "kBlockURL"
+    }
+    
+    var blockURL:String? {
+        
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.kTapBlockURL, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        }
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.kTapBlockURL) as! String?
+        }
+    }
+    
 }

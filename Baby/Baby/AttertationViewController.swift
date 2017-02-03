@@ -10,10 +10,11 @@ import UIKit
 
 class AttertationViewController: UIViewController {
 
+    @IBOutlet weak var bannnerImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.red
+        bannnerImageView.sd_setImage(with: URL.init(string: "http://images.chewawa.com.cn/inapp/V40-2/vippagetitle.png"))
 
     }
 
@@ -21,7 +22,13 @@ class AttertationViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+ 
+    @IBAction func lookProtocol(_ sender: UITapGestureRecognizer) {
+        
+        print("lookProtocol")
+    }
 
-
-
+    @IBAction func clickBanner(_ sender: UITapGestureRecognizer) {
+        print("clickBanner")
+    }
 }
