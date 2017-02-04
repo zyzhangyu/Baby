@@ -36,6 +36,9 @@ class ZYConstants: NSObject {
      *   HomeViewController中Collectionview注册的Cell
      **/
     static let CellID = "cell"
+    
+    static let navigationBarTintColor = ZYCoreUtils.BabyColor(50, g: 50, b: 50, a: 1)
 
+    static let navigationBackBarBttonColor = ZYCoreUtils.BabyColor(138, g: 209, b: 33, a: 1.0)
 
 }

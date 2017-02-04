@@ -20,6 +20,8 @@ class ZYCoreUtils: NSObject {
     }
     
     
+    
+    
     static func StringToCGFloat(str:String)->(CGFloat){
         
         let string = str
@@ -31,6 +33,20 @@ class ZYCoreUtils: NSObject {
             cgFloat = CGFloat(doubleValue)
         }
         return cgFloat
+    }
+    
+    static func setupBackBarButton() -> UIBarButtonItem {
+        
+        let button = UIButton.init(type: UIButtonType.custom)
+        button.frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
+        button.setBackgroundImage(UIImage.init(named: "ticon_back"), for: UIControlState.normal)
+        button.setTitleColor(ZYConstants.navigationBackBarBttonColor, for: UIControlState.normal)
+        button.setTitleColor(ZYConstants.navigationBackBarBttonColor, for: UIControlState.highlighted)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        
+        let barButton = UIBarButtonItem.init(customView: button)
+        return barButton
+
     }
 
 }

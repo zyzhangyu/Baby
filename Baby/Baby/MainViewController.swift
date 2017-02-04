@@ -29,6 +29,7 @@ class MainViewController: UITabBarController{
         
         var navigation:UINavigationController
         
+        
         self.tabBar.isTranslucent = false
         self.tabBar.tintColor = UIColor.init(red: 138.0/255.0, green: 209.0/255.0, blue: 33/255.0, alpha: 1.0)
 

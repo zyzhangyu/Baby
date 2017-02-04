@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import ObjectMapper
 import SDWebImage
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     var zyCollectionView:UICollectionView!
     fileprivate let HeadViewHeight:CGFloat = 200.0
@@ -18,10 +18,20 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let logo = UIImageView.init()
+        logo.frame = CGRect.init(x: 0, y: 0, width: 100, height: 30)
+        logo.image = UIImage.init(named: "indextoptitle_logo")
+        logo.contentMode = UIViewContentMode.scaleAspectFill
+        
+        let titleView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 30))
+        titleView.addSubview(logo)
+        navigationItem.titleView = titleView
+
         self.automaticallyAdjustsScrollViewInsets = false
         let layout = UICollectionViewFlowLayout.init()
         var rect = self.view.bounds;
-        rect.origin.y = 64;
+        rect.origin.y = 0;
         rect.size.height = ZYConstants.SCREENHEIGHT - 64 - 49;
         zyCollectionView = UICollectionView.init(frame: rect, collectionViewLayout: layout)
         zyCollectionView.backgroundColor = UIColor.cyan
