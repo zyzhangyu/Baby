@@ -15,8 +15,6 @@ class AttertationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         self.title = "认证车主"
         bannnerImageView.sd_setImage(with: URL.init(string: "http://images.chewawa.com.cn/inapp/V40-2/vippagetitle.png"))
 
@@ -30,6 +28,11 @@ class AttertationViewController: BaseViewController {
     @IBAction func lookProtocol(_ sender: UITapGestureRecognizer) {
         
         print("lookProtocol")
+    }
+    
+    override func clickBackBarButton(){
+        
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

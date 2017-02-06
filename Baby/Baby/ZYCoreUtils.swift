@@ -10,7 +10,6 @@ import UIKit
 
 class ZYCoreUtils: NSObject {
     
-    
     /**
      *  颜色
      */
@@ -19,14 +18,10 @@ class ZYCoreUtils: NSObject {
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a);
     }
     
-    
-    
-    
     static func StringToCGFloat(str:String)->(CGFloat){
         
         let string = str
         var cgFloat: CGFloat = 0
-        
         
         if let doubleValue = Double(string)
         {
@@ -35,7 +30,7 @@ class ZYCoreUtils: NSObject {
         return cgFloat
     }
     
-    static func setupBackBarButton() -> UIBarButtonItem {
+    static func setupBackBarButton(_ viewController:BaseViewController) -> UIBarButtonItem {
         
         let button = UIButton.init(type: UIButtonType.custom)
         button.frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
@@ -43,10 +38,12 @@ class ZYCoreUtils: NSObject {
         button.setTitleColor(ZYConstants.navigationBackBarBttonColor, for: UIControlState.normal)
         button.setTitleColor(ZYConstants.navigationBackBarBttonColor, for: UIControlState.highlighted)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        
+        button.addTarget(viewController, action: #selector(BaseViewController.clickBackBarButton), for: UIControlEvents.touchUpInside)
         let barButton = UIBarButtonItem.init(customView: button)
         return barButton
-
     }
+    
+    
+    
 
 }
