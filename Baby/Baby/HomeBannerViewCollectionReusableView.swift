@@ -156,9 +156,11 @@ extension HomeBannerViewCollectionReusableView : UIScrollViewDelegate {
         loadImage()
         headerSCView.contentOffset = CGPoint.init(x: ZYConstants.SCREENWIDTH, y: 0)
     }
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         timer?.invalidate()
     }
+    
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         perform(#selector(HomeBannerViewCollectionReusableView.runTimer), with: nil, afterDelay: 1.0)

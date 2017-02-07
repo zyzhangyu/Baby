@@ -198,10 +198,12 @@ extension HomeViewController:HomeCollectionViewCellDelegate {
                 let sb = UIStoryboard.init(name: "SimpleStoryboard", bundle: Bundle.main)
                 let vc = sb.instantiateViewController(withIdentifier: "AttertationViewController")
                 navigationController?.pushViewController(vc, animated: true)
-                
             case "http://chewawa.cn/wawagooddriver-addcar":
                 let sb = UIStoryboard.init(name: "SimpleStoryboard", bundle: Bundle.main)
                 let vc = sb.instantiateViewController(withIdentifier: "DiscountCalculatorViewController")
+                navigationController?.pushViewController(vc, animated: true)
+            case "http://chewawa.cn/indexyanbao":
+                let vc = ProlongPriceViewController()
                 navigationController?.pushViewController(vc, animated: true)
             default:
                 print("default")

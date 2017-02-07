@@ -269,12 +269,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bU-zI-2rt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-561" y="28"/>
+            <point key="canvasLocation" x="-620" y="108"/>
         </scene>
-        <!--View Controller-->
+        <!--Prolong Price View Controller-->
         <scene sceneID="5iV-Za-aue">
             <objects>
-                <viewController id="19f-sV-fAO" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ProlongPriceViewController" storyboardIdentifier="ProlongPriceViewController" id="19f-sV-fAO" customClass="ProlongPriceViewController" customModule="Baby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zn1-hI-jiJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Xg2-jU-8nq"/>
@@ -284,10 +284,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKD-4z-xWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63" y="54"/>
+            <point key="canvasLocation" x="7" y="108"/>
         </scene>
     </scenes>
     <resources>
