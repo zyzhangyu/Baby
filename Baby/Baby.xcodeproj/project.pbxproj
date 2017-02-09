@@ -15,10 +15,16 @@
 		2A4756CE1E2F513400B59D39 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4756CD1E2F513400B59D39 /* MyViewController.swift */; };
 		2A4756DB1E30998300B59D39 /* ZYConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4756DA1E30998300B59D39 /* ZYConstants.swift */; };
 		2A51608B1E4463B40093249F /* SimpleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A51608A1E4463B40093249F /* SimpleStoryboard.storyboard */; };
+		2A51608D1E455FF40093249F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51608C1E455FF40093249F /* BaseViewController.swift */; };
 		2A6E2BFCAE7B422208698205 /* Pods_Baby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5698B3A2720CA054B215BB7E /* Pods_Baby.framework */; };
 		2A7A61AB1E388CBB00E658F2 /* AttertationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A61AA1E388CBB00E658F2 /* AttertationViewController.swift */; };
 		2A992A8C1E348E170094C46B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A992A8B1E348E170094C46B /* HomeCollectionViewCell.swift */; };
 		2A992A961E359EF00094C46B /* ZYCoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A992A951E359EEF0094C46B /* ZYCoreUtils.swift */; };
+		2AE7DD461E48096C003D278F /* DiscountCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7DD451E48096C003D278F /* DiscountCalculatorViewController.swift */; };
+		2AE7DD4A1E4856CE003D278F /* DiscountCalculatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7DD491E4856CE003D278F /* DiscountCalculatorTableViewCell.swift */; };
+		2AE7DD4C1E4951E7003D278F /* ProlongPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7DD4B1E4951E7003D278F /* ProlongPriceViewController.swift */; };
+		2AE7DD4E1E4959F2003D278F /* PriceRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7DD4D1E4959F2003D278F /* PriceRecordTableViewCell.swift */; };
+		2AE7DD501E498B8A003D278F /* AskPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7DD4F1E498B8A003D278F /* AskPriceTableViewCell.swift */; };
 		2AF86E521E2F36D100A8EB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF86E511E2F36D100A8EB0C /* AppDelegate.swift */; };
 		2AF86E591E2F36D100A8EB0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF86E581E2F36D100A8EB0C /* Assets.xcassets */; };
 		2AF86E5C1E2F36D100A8EB0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF86E5A1E2F36D100A8EB0C /* LaunchScreen.storyboard */; };
@@ -34,11 +40,17 @@
 		2A4756CD1E2F513400B59D39 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		2A4756DA1E30998300B59D39 /* ZYConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYConstants.swift; sourceTree = "<group>"; };
 		2A51608A1E4463B40093249F /* SimpleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleStoryboard.storyboard; sourceTree = "<group>"; };
+		2A51608C1E455FF40093249F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2A7A61AA1E388CBB00E658F2 /* AttertationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttertationViewController.swift; sourceTree = "<group>"; };
 		2A8369CF1E34583A0099E36C /* Baby-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baby-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A992A8B1E348E170094C46B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A992A951E359EEF0094C46B /* ZYCoreUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCoreUtils.swift; sourceTree = "<group>"; };
 		2A992A971E35AC710094C46B /* Home */ = {isa = PBXFileReference; lastKnownFileType = text; path = Home; sourceTree = "<group>"; };
+		2AE7DD451E48096C003D278F /* DiscountCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCalculatorViewController.swift; sourceTree = "<group>"; };
+		2AE7DD491E4856CE003D278F /* DiscountCalculatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCalculatorTableViewCell.swift; sourceTree = "<group>"; };
+		2AE7DD4B1E4951E7003D278F /* ProlongPriceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProlongPriceViewController.swift; sourceTree = "<group>"; };
+		2AE7DD4D1E4959F2003D278F /* PriceRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceRecordTableViewCell.swift; sourceTree = "<group>"; };
+		2AE7DD4F1E498B8A003D278F /* AskPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskPriceTableViewCell.swift; sourceTree = "<group>"; };
 		2AF86E4E1E2F36D100A8EB0C /* Baby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF86E511E2F36D100A8EB0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF86E581E2F36D100A8EB0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +109,7 @@
 			children = (
 				2A4756DA1E30998300B59D39 /* ZYConstants.swift */,
 				2A992A951E359EEF0094C46B /* ZYCoreUtils.swift */,
+				2A51608C1E455FF40093249F /* BaseViewController.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -113,6 +126,8 @@
 			children = (
 				2A4756C91E2F507500B59D39 /* HomeViewController.swift */,
 				2A7A61AA1E388CBB00E658F2 /* AttertationViewController.swift */,
+				2AE7DD451E48096C003D278F /* DiscountCalculatorViewController.swift */,
+				2AE7DD4B1E4951E7003D278F /* ProlongPriceViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -122,6 +137,9 @@
 			children = (
 				2A3E6D3D1E3716A7008F423A /* HomeBannerViewCollectionReusableView.swift */,
 				2A992A8B1E348E170094C46B /* HomeCollectionViewCell.swift */,
+				2AE7DD491E4856CE003D278F /* DiscountCalculatorTableViewCell.swift */,
+				2AE7DD4D1E4959F2003D278F /* PriceRecordTableViewCell.swift */,
+				2AE7DD4F1E498B8A003D278F /* AskPriceTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -303,15 +321,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3E6D3B1E35D3F2008F423A /* HomeResponse.swift in Sources */,
+				2AE7DD501E498B8A003D278F /* AskPriceTableViewCell.swift in Sources */,
 				2AF86E521E2F36D100A8EB0C /* AppDelegate.swift in Sources */,
 				2A4756CC1E2F512500B59D39 /* GoodDriverViewController.swift in Sources */,
+				2AE7DD4C1E4951E7003D278F /* ProlongPriceViewController.swift in Sources */,
+				2AE7DD461E48096C003D278F /* DiscountCalculatorViewController.swift in Sources */,
 				2AF86E641E2F37B300A8EB0C /* MainViewController.swift in Sources */,
 				2A992A961E359EF00094C46B /* ZYCoreUtils.swift in Sources */,
+				2A51608D1E455FF40093249F /* BaseViewController.swift in Sources */,
 				2A3E6D3E1E3716A7008F423A /* HomeBannerViewCollectionReusableView.swift in Sources */,
 				2A992A8C1E348E170094C46B /* HomeCollectionViewCell.swift in Sources */,
 				2A7A61AB1E388CBB00E658F2 /* AttertationViewController.swift in Sources */,
 				2A4756CE1E2F513400B59D39 /* MyViewController.swift in Sources */,
 				2A4756DB1E30998300B59D39 /* ZYConstants.swift in Sources */,
+				2AE7DD4A1E4856CE003D278F /* DiscountCalculatorTableViewCell.swift in Sources */,
+				2AE7DD4E1E4959F2003D278F /* PriceRecordTableViewCell.swift in Sources */,
 				2A4756CA1E2F507500B59D39 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

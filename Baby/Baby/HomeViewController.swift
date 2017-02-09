@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import ObjectMapper
 import SDWebImage
+
 class HomeViewController: UIViewController {
     // this view is not changed
     var zyCollectionView:UICollectionView!
@@ -18,10 +19,20 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let logo = UIImageView.init()
+        logo.frame = CGRect.init(x: 0, y: 0, width: 100, height: 30)
+        logo.image = UIImage.init(named: "indextoptitle_logo")
+        logo.contentMode = UIViewContentMode.scaleAspectFill
+        
+        let titleView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 30))
+        titleView.addSubview(logo)
+        navigationItem.titleView = titleView
+
         self.automaticallyAdjustsScrollViewInsets = false
         let layout = UICollectionViewFlowLayout.init()
         var rect = self.view.bounds;
-        rect.origin.y = 64;
+        rect.origin.y = 0;
         rect.size.height = ZYConstants.SCREENHEIGHT - 64 - 49;
         zyCollectionView = UICollectionView.init(frame: rect, collectionViewLayout: layout)
         zyCollectionView.backgroundColor = UIColor.cyan
@@ -187,6 +198,13 @@ extension HomeViewController:HomeCollectionViewCellDelegate {
                 
                 let sb = UIStoryboard.init(name: "SimpleStoryboard", bundle: Bundle.main)
                 let vc = sb.instantiateViewController(withIdentifier: "AttertationViewController")
+                navigationController?.pushViewController(vc, animated: true)
+            case "http://chewawa.cn/wawagooddriver-addcar":
+                let sb = UIStoryboard.init(name: "SimpleStoryboard", bundle: Bundle.main)
+                let vc = sb.instantiateViewController(withIdentifier: "DiscountCalculatorViewController")
+                navigationController?.pushViewController(vc, animated: true)
+            case "http://chewawa.cn/indexyanbao":
+                let vc = ProlongPriceViewController()
                 navigationController?.pushViewController(vc, animated: true)
             default:
                 print("default")
