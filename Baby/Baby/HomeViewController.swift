@@ -10,8 +10,9 @@ import UIKit
 import SnapKit
 import ObjectMapper
 import SDWebImage
-class HomeViewController: BaseViewController {
-    
+
+class HomeViewController: UIViewController {
+    // this view is not changed
     var zyCollectionView:UICollectionView!
     fileprivate let HeadViewHeight:CGFloat = 200.0
     var response:HomeResponse?
