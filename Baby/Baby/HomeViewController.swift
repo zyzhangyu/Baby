@@ -11,7 +11,7 @@ import SnapKit
 import ObjectMapper
 import SDWebImage
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     // this view is not changed
     var zyCollectionView:UICollectionView!
     fileprivate let HeadViewHeight:CGFloat = 200.0
@@ -187,9 +187,12 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
+
+
 extension HomeViewController:HomeCollectionViewCellDelegate {
     
     func clickImageview(_ string: String?) {
+        
         
         if let str = string {
             
@@ -206,10 +209,37 @@ extension HomeViewController:HomeCollectionViewCellDelegate {
             case "http://chewawa.cn/indexyanbao":
                 let vc = ProlongPriceViewController()
                 navigationController?.pushViewController(vc, animated: true)
+                
+            case "http://chewawa.cpsdna.com:35080/chewawa/":
+                var webVC = WaWaViewController()
+                webVC.loadURLWithString("http:/"+"/images.chewawa.com.cn/inapp/guaranteegid/")
+                webVC.delegate = self
+                webVC.toolbar.toolbarTintColor = UIColor.darkGray
+                webVC.toolbar.toolbarBackgroundColor = UIColor.white
+                webVC.toolbar.toolbarTranslucent = false
+                webVC.allowsBackForwardNavigationGestures = true
+                webVC.hidesBottomBarWhenPushed = true
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+                    webVC.showToolbar(true, animated: true)})
+                navigationController?.pushViewController(webVC, animated: true)
+
+
             default:
                 print("default")
             }
+            
+ 
         }
     }
 }
+
+extension HomeViewController: GDWebViewControllerDelegate{
+ 
+    func webViewController(_ webViewController: GDWebViewController, didChangeTitle newTitle: NSString?) {
+        navigationController?.navigationBar.topItem?.title = newTitle as? String
+    }
+}
+
+
+
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3E020E1E4DDEED00B9209E /* GDWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E020C1E4DDEED00B9209E /* GDWebViewController.swift */; };
+		2A3E020F1E4DDEED00B9209E /* GDWebViewNavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E020D1E4DDEED00B9209E /* GDWebViewNavigationToolbar.swift */; };
+		2A3E02141E4FF56A00B9209E /* WaWaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E02131E4FF56A00B9209E /* WaWaViewController.swift */; };
 		2A3E6D3B1E35D3F2008F423A /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E6D3A1E35D3F2008F423A /* HomeResponse.swift */; };
 		2A3E6D3C1E35E481008F423A /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 2A992A971E35AC710094C46B /* Home */; };
 		2A3E6D3E1E3716A7008F423A /* HomeBannerViewCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E6D3D1E3716A7008F423A /* HomeBannerViewCollectionReusableView.swift */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		1049CA7F40B4F42A4F4EDF65 /* Pods-Baby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baby/Pods-Baby.release.xcconfig"; sourceTree = "<group>"; };
+		2A3E020C1E4DDEED00B9209E /* GDWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDWebViewController.swift; sourceTree = "<group>"; };
+		2A3E020D1E4DDEED00B9209E /* GDWebViewNavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDWebViewNavigationToolbar.swift; sourceTree = "<group>"; };
+		2A3E02131E4FF56A00B9209E /* WaWaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaWaViewController.swift; sourceTree = "<group>"; };
 		2A3E6D3A1E35D3F2008F423A /* HomeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
 		2A3E6D3D1E3716A7008F423A /* HomeBannerViewCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBannerViewCollectionReusableView.swift; sourceTree = "<group>"; };
 		2A4756C91E2F507500B59D39 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 				2A4756DA1E30998300B59D39 /* ZYConstants.swift */,
 				2A992A951E359EEF0094C46B /* ZYCoreUtils.swift */,
 				2A51608C1E455FF40093249F /* BaseViewController.swift */,
+				2A3E020C1E4DDEED00B9209E /* GDWebViewController.swift */,
+				2A3E020D1E4DDEED00B9209E /* GDWebViewNavigationToolbar.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				2A7A61AA1E388CBB00E658F2 /* AttertationViewController.swift */,
 				2AE7DD451E48096C003D278F /* DiscountCalculatorViewController.swift */,
 				2AE7DD4B1E4951E7003D278F /* ProlongPriceViewController.swift */,
+				2A3E02131E4FF56A00B9209E /* WaWaViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -322,16 +331,19 @@
 			files = (
 				2A3E6D3B1E35D3F2008F423A /* HomeResponse.swift in Sources */,
 				2AE7DD501E498B8A003D278F /* AskPriceTableViewCell.swift in Sources */,
+				2A3E02141E4FF56A00B9209E /* WaWaViewController.swift in Sources */,
 				2AF86E521E2F36D100A8EB0C /* AppDelegate.swift in Sources */,
 				2A4756CC1E2F512500B59D39 /* GoodDriverViewController.swift in Sources */,
 				2AE7DD4C1E4951E7003D278F /* ProlongPriceViewController.swift in Sources */,
 				2AE7DD461E48096C003D278F /* DiscountCalculatorViewController.swift in Sources */,
+				2A3E020F1E4DDEED00B9209E /* GDWebViewNavigationToolbar.swift in Sources */,
 				2AF86E641E2F37B300A8EB0C /* MainViewController.swift in Sources */,
 				2A992A961E359EF00094C46B /* ZYCoreUtils.swift in Sources */,
 				2A51608D1E455FF40093249F /* BaseViewController.swift in Sources */,
 				2A3E6D3E1E3716A7008F423A /* HomeBannerViewCollectionReusableView.swift in Sources */,
 				2A992A8C1E348E170094C46B /* HomeCollectionViewCell.swift in Sources */,
 				2A7A61AB1E388CBB00E658F2 /* AttertationViewController.swift in Sources */,
+				2A3E020E1E4DDEED00B9209E /* GDWebViewController.swift in Sources */,
 				2A4756CE1E2F513400B59D39 /* MyViewController.swift in Sources */,
 				2A4756DB1E30998300B59D39 /* ZYConstants.swift in Sources */,
 				2AE7DD4A1E4856CE003D278F /* DiscountCalculatorTableViewCell.swift in Sources */,
