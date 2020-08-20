@@ -18,6 +18,13 @@ struct ZYLandmarkRow: View {
                 .frame(width: 50, height: 50, alignment: .center)
             Text(landmark.name)
             Spacer()
+            
+            ///如果是收藏的 就添加一个star的图片
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }

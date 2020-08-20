@@ -11,7 +11,13 @@ import SwiftUI
 ///描述内容和布局
 struct ZYLandmarkDetail: View {
     
+    @EnvironmentObject var userData:UserData
+    
     var landmark:Landmark
+    
+    var landmarkIndex: Int {
+        userData.landmarks.firstIndex(where: {$0.id == landmark.id})!
+    }
     
     var body: some View {
         VStack {
@@ -24,9 +30,24 @@ struct ZYLandmarkDetail: View {
                 .padding(.bottom, -130)
                 
             VStack(alignment: .leading, spacing: nil) {
-                Text("Turtle Rock")
+                HStack {
+                    Text(landmark.name)
                     .font(.title)
                     .foregroundColor(.green)
+                    
+                    Button.init(action: {
+                        self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                    }) {
+                        if self.userData.landmarks[self.landmarkIndex].isFavorite {
+                            Image.init(systemName: "star.fill")
+                                .foregroundColor(Color.yellow)
+                        }else {
+                            Image.init(systemName: "star")
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                }
+                
                 HStack {
                     Text("Joshua Tree National Park")
                         .font(.subheadline)
@@ -48,5 +69,6 @@ struct ZYLandmarkDetail: View {
 struct ZYLandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
         ZYLandmarkDetail(landmark: landmarkData[10])
+        .environmentObject(UserData())
     }
 }
