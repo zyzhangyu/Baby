@@ -33,6 +33,19 @@
 		8BC5D73E24EE775900AD120E /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BC5D73124EE775900AD120E /* turtlerock.jpg */; };
 		8BC5D73F24EE775900AD120E /* chincoteague.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BC5D73224EE775900AD120E /* chincoteague.jpg */; };
 		8BC5D74124EE7AF400AD120E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74024EE7AF400AD120E /* UserData.swift */; };
+		8BC5D74524EF59C000AD120E /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74424EF59C000AD120E /* Badge.swift */; };
+		8BC5D74724EF59E700AD120E /* ZYHexagonParamters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74624EF59E700AD120E /* ZYHexagonParamters.swift */; };
+		8BC5D74924EF616700AD120E /* ZYBadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74824EF616700AD120E /* ZYBadgeBackground.swift */; };
+		8BC5D74B24EF61ED00AD120E /* ZYBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74A24EF61ED00AD120E /* ZYBadgeSymbol.swift */; };
+		8BC5D74D24EF624E00AD120E /* ZYRotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74C24EF624E00AD120E /* ZYRotatedBadgeSymbol.swift */; };
+		8BC5D74F24EF64A700AD120E /* ZYHikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D74E24EF64A700AD120E /* ZYHikeView.swift */; };
+		8BC5D75124EF64CA00AD120E /* ZYHikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D75024EF64CA00AD120E /* ZYHikeGraph.swift */; };
+		8BC5D75324EF651B00AD120E /* ZYHike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D75224EF651B00AD120E /* ZYHike.swift */; };
+		8BC5D75624EF655600AD120E /* ZYGraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D75524EF655600AD120E /* ZYGraphCapsule.swift */; };
+		8BC5D75824EF66EF00AD120E /* ZYHikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D75724EF66EF00AD120E /* ZYHikeDetail.swift */; };
+		8BC5D75A24EF67B100AD120E /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BC5D75924EF67B100AD120E /* hikeData.json */; };
+		8BC5D75E24EF72D400AD120E /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D75D24EF72D400AD120E /* CategoryHome.swift */; };
+		8BC5D76024EF73D000AD120E /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D75F24EF73D000AD120E /* CategoryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +77,19 @@
 		8BC5D73124EE775900AD120E /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
 		8BC5D73224EE775900AD120E /* chincoteague.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chincoteague.jpg; sourceTree = "<group>"; };
 		8BC5D74024EE7AF400AD120E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8BC5D74424EF59C000AD120E /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		8BC5D74624EF59E700AD120E /* ZYHexagonParamters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYHexagonParamters.swift; sourceTree = "<group>"; };
+		8BC5D74824EF616700AD120E /* ZYBadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYBadgeBackground.swift; sourceTree = "<group>"; };
+		8BC5D74A24EF61ED00AD120E /* ZYBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYBadgeSymbol.swift; sourceTree = "<group>"; };
+		8BC5D74C24EF624E00AD120E /* ZYRotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYRotatedBadgeSymbol.swift; sourceTree = "<group>"; };
+		8BC5D74E24EF64A700AD120E /* ZYHikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYHikeView.swift; sourceTree = "<group>"; };
+		8BC5D75024EF64CA00AD120E /* ZYHikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYHikeGraph.swift; sourceTree = "<group>"; };
+		8BC5D75224EF651B00AD120E /* ZYHike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYHike.swift; sourceTree = "<group>"; };
+		8BC5D75524EF655600AD120E /* ZYGraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYGraphCapsule.swift; sourceTree = "<group>"; };
+		8BC5D75724EF66EF00AD120E /* ZYHikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYHikeDetail.swift; sourceTree = "<group>"; };
+		8BC5D75924EF67B100AD120E /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
+		8BC5D75D24EF72D400AD120E /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		8BC5D75F24EF73D000AD120E /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +132,17 @@
 				8B68F1F724ED057800D6D273 /* ZYMapView.swift */,
 				8BC5D71F24EE560500AD120E /* ZYLandmarkList.swift */,
 				8BC5D74024EE7AF400AD120E /* UserData.swift */,
+				8BC5D74424EF59C000AD120E /* Badge.swift */,
+				8BC5D74624EF59E700AD120E /* ZYHexagonParamters.swift */,
+				8BC5D74824EF616700AD120E /* ZYBadgeBackground.swift */,
+				8BC5D74A24EF61ED00AD120E /* ZYBadgeSymbol.swift */,
+				8BC5D74C24EF624E00AD120E /* ZYRotatedBadgeSymbol.swift */,
+				8BC5D74E24EF64A700AD120E /* ZYHikeView.swift */,
+				8BC5D75024EF64CA00AD120E /* ZYHikeGraph.swift */,
+				8BC5D75724EF66EF00AD120E /* ZYHikeDetail.swift */,
+				8BC5D75D24EF72D400AD120E /* CategoryHome.swift */,
+				8BC5D75F24EF73D000AD120E /* CategoryRow.swift */,
+				8BC5D75424EF654300AD120E /* Supporting Views */,
 				8B68F1E524ECFB2F00D6D273 /* Assets.xcassets */,
 				8B68F1EA24ECFB2F00D6D273 /* LaunchScreen.storyboard */,
 				8B68F1ED24ECFB2F00D6D273 /* Info.plist */,
@@ -127,6 +164,7 @@
 			children = (
 				8BC5D6FE24EE19FB00AD120E /* ZYLandmark.swift */,
 				8BC5D71B24EE480A00AD120E /* ZYData.swift */,
+				8BC5D75224EF651B00AD120E /* ZYHike.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +172,7 @@
 		8BC5D70024EE47B900AD120E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8BC5D75924EF67B100AD120E /* hikeData.json */,
 				8BC5D72A24EE775800AD120E /* charleyrivers.jpg */,
 				8BC5D72624EE775800AD120E /* chilkoottrail.jpg */,
 				8BC5D73224EE775900AD120E /* chincoteague.jpg */,
@@ -149,6 +188,14 @@
 				8BC5D72824EE775800AD120E /* umbagog.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BC5D75424EF654300AD120E /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D75524EF655600AD120E /* ZYGraphCapsule.swift */,
+			);
+			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +258,7 @@
 			files = (
 				8BC5D73524EE775900AD120E /* umbagog.jpg in Resources */,
 				8BC5D73C24EE775900AD120E /* hiddenlake.jpg in Resources */,
+				8BC5D75A24EF67B100AD120E /* hikeData.json in Resources */,
 				8BC5D73924EE775900AD120E /* rainbowlake.jpg in Resources */,
 				8BC5D73424EE775900AD120E /* silversalmoncreek.jpg in Resources */,
 				8B68F1EC24ECFB2F00D6D273 /* LaunchScreen.storyboard in Resources */,
@@ -235,15 +283,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC5D76024EF73D000AD120E /* CategoryRow.swift in Sources */,
 				8BC5D72024EE560500AD120E /* ZYLandmarkList.swift in Sources */,
+				8BC5D75E24EF72D400AD120E /* CategoryHome.swift in Sources */,
 				8B68F1E024ECFB2D00D6D273 /* AppDelegate.swift in Sources */,
+				8BC5D74524EF59C000AD120E /* Badge.swift in Sources */,
+				8BC5D75324EF651B00AD120E /* ZYHike.swift in Sources */,
+				8BC5D75824EF66EF00AD120E /* ZYHikeDetail.swift in Sources */,
+				8BC5D74924EF616700AD120E /* ZYBadgeBackground.swift in Sources */,
+				8BC5D74724EF59E700AD120E /* ZYHexagonParamters.swift in Sources */,
 				8B68F1E224ECFB2D00D6D273 /* SceneDelegate.swift in Sources */,
+				8BC5D75624EF655600AD120E /* ZYGraphCapsule.swift in Sources */,
 				8BC5D6FF24EE19FB00AD120E /* ZYLandmark.swift in Sources */,
 				8BC5D71E24EE4D1100AD120E /* ZYLandmarkRow.swift in Sources */,
 				8B68F1F424ED03E900D6D273 /* ZYCircleImage.swift in Sources */,
 				8BC5D71C24EE480A00AD120E /* ZYData.swift in Sources */,
+				8BC5D74F24EF64A700AD120E /* ZYHikeView.swift in Sources */,
 				8B68F1F824ED057800D6D273 /* ZYMapView.swift in Sources */,
+				8BC5D74D24EF624E00AD120E /* ZYRotatedBadgeSymbol.swift in Sources */,
+				8BC5D75124EF64CA00AD120E /* ZYHikeGraph.swift in Sources */,
 				8BC5D74124EE7AF400AD120E /* UserData.swift in Sources */,
+				8BC5D74B24EF61ED00AD120E /* ZYBadgeSymbol.swift in Sources */,
 				8B68F1E424ECFB2D00D6D273 /* ZYLandmarkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
