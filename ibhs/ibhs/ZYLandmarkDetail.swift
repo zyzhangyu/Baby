@@ -32,35 +32,37 @@ struct ZYLandmarkDetail: View {
             VStack(alignment: .leading, spacing: nil) {
                 HStack {
                     Text(landmark.name)
-                    .font(.title)
-                    .foregroundColor(.green)
+                        .font(.title)
                     
-                    Button.init(action: {
-                        self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                    Button(action: {
+                        self.userData.landmarks[self.landmarkIndex]
+                            .isFavorite.toggle()
                     }) {
-                        if self.userData.landmarks[self.landmarkIndex].isFavorite {
-                            Image.init(systemName: "star.fill")
+                        if self.userData.landmarks[self.landmarkIndex]
+                            .isFavorite {
+                            Image(systemName: "star.fill")
                                 .foregroundColor(Color.yellow)
-                        }else {
-                            Image.init(systemName: "star")
+                        } else {
+                            Image(systemName: "star")
                                 .foregroundColor(Color.gray)
                         }
                     }
                 }
+
                 
-                HStack {
-                    Text("Joshua Tree National Park")
-                        .font(.subheadline)
-                    Spacer()
-                    Text("California")
-                        .font(.subheadline)
-                }
+                HStack(alignment: .top) {
+                          Text(landmark.park)
+                              .font(.subheadline)
+                          Spacer()
+                          Text(landmark.state)
+                              .font(.subheadline)
+                      }
             }
 
             .padding()
             Spacer()
         }
-        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
+//        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
 
     }
 }
@@ -68,7 +70,7 @@ struct ZYLandmarkDetail: View {
 ///生命该视图的预览
 struct ZYLandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ZYLandmarkDetail(landmark: landmarkData[10])
+        ZYLandmarkDetail(landmark: landmarkData[0])
         .environmentObject(UserData())
     }
 }

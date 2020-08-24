@@ -15,6 +15,11 @@
 		8B68F1EC24ECFB2F00D6D273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B68F1EA24ECFB2F00D6D273 /* LaunchScreen.storyboard */; };
 		8B68F1F424ED03E900D6D273 /* ZYCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B68F1F324ED03E900D6D273 /* ZYCircleImage.swift */; };
 		8B68F1F824ED057800D6D273 /* ZYMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B68F1F724ED057800D6D273 /* ZYMapView.swift */; };
+		8B9F7B6424F351520099370F /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F7B6324F351520099370F /* CategoryItem.swift */; };
+		8B9F7B6724F361810099370F /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F7B6624F361810099370F /* ProfileHost.swift */; };
+		8B9F7B6924F3619F0099370F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F7B6824F3619F0099370F /* Profile.swift */; };
+		8B9F7B6B24F364430099370F /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F7B6A24F364430099370F /* ProfileSummary.swift */; };
+		8B9F7B6D24F383EF0099370F /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F7B6C24F383EF0099370F /* ProfileEditor.swift */; };
 		8BC5D6FF24EE19FB00AD120E /* ZYLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D6FE24EE19FB00AD120E /* ZYLandmark.swift */; };
 		8BC5D71C24EE480A00AD120E /* ZYData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D71B24EE480A00AD120E /* ZYData.swift */; };
 		8BC5D71E24EE4D1100AD120E /* ZYLandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D71D24EE4D1100AD120E /* ZYLandmarkRow.swift */; };
@@ -59,6 +64,11 @@
 		8B68F1ED24ECFB2F00D6D273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B68F1F324ED03E900D6D273 /* ZYCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCircleImage.swift; sourceTree = "<group>"; };
 		8B68F1F724ED057800D6D273 /* ZYMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYMapView.swift; sourceTree = "<group>"; };
+		8B9F7B6324F351520099370F /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		8B9F7B6624F361810099370F /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		8B9F7B6824F3619F0099370F /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		8B9F7B6A24F364430099370F /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		8B9F7B6C24F383EF0099370F /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		8BC5D6FE24EE19FB00AD120E /* ZYLandmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYLandmark.swift; sourceTree = "<group>"; };
 		8BC5D71B24EE480A00AD120E /* ZYData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYData.swift; sourceTree = "<group>"; };
 		8BC5D71D24EE4D1100AD120E /* ZYLandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYLandmarkRow.swift; sourceTree = "<group>"; };
@@ -124,6 +134,7 @@
 			children = (
 				8BC5D70024EE47B900AD120E /* Resources */,
 				8BC5D6FD24EE19C700AD120E /* Models */,
+				8BC5D74024EE7AF400AD120E /* UserData.swift */,
 				8B68F1DF24ECFB2D00D6D273 /* AppDelegate.swift */,
 				8B68F1E124ECFB2D00D6D273 /* SceneDelegate.swift */,
 				8B68F1E324ECFB2D00D6D273 /* ZYLandmarkDetail.swift */,
@@ -131,7 +142,6 @@
 				8B68F1F324ED03E900D6D273 /* ZYCircleImage.swift */,
 				8B68F1F724ED057800D6D273 /* ZYMapView.swift */,
 				8BC5D71F24EE560500AD120E /* ZYLandmarkList.swift */,
-				8BC5D74024EE7AF400AD120E /* UserData.swift */,
 				8BC5D74424EF59C000AD120E /* Badge.swift */,
 				8BC5D74624EF59E700AD120E /* ZYHexagonParamters.swift */,
 				8BC5D74824EF616700AD120E /* ZYBadgeBackground.swift */,
@@ -142,6 +152,8 @@
 				8BC5D75724EF66EF00AD120E /* ZYHikeDetail.swift */,
 				8BC5D75D24EF72D400AD120E /* CategoryHome.swift */,
 				8BC5D75F24EF73D000AD120E /* CategoryRow.swift */,
+				8B9F7B6324F351520099370F /* CategoryItem.swift */,
+				8B9F7B6524F361730099370F /* Profile */,
 				8BC5D75424EF654300AD120E /* Supporting Views */,
 				8B68F1E524ECFB2F00D6D273 /* Assets.xcassets */,
 				8B68F1EA24ECFB2F00D6D273 /* LaunchScreen.storyboard */,
@@ -159,9 +171,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8B9F7B6524F361730099370F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F7B6624F361810099370F /* ProfileHost.swift */,
+				8B9F7B6A24F364430099370F /* ProfileSummary.swift */,
+				8B9F7B6C24F383EF0099370F /* ProfileEditor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		8BC5D6FD24EE19C700AD120E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8B9F7B6824F3619F0099370F /* Profile.swift */,
 				8BC5D6FE24EE19FB00AD120E /* ZYLandmark.swift */,
 				8BC5D71B24EE480A00AD120E /* ZYData.swift */,
 				8BC5D75224EF651B00AD120E /* ZYHike.swift */,
@@ -286,17 +309,21 @@
 				8BC5D76024EF73D000AD120E /* CategoryRow.swift in Sources */,
 				8BC5D72024EE560500AD120E /* ZYLandmarkList.swift in Sources */,
 				8BC5D75E24EF72D400AD120E /* CategoryHome.swift in Sources */,
+				8B9F7B6724F361810099370F /* ProfileHost.swift in Sources */,
 				8B68F1E024ECFB2D00D6D273 /* AppDelegate.swift in Sources */,
 				8BC5D74524EF59C000AD120E /* Badge.swift in Sources */,
 				8BC5D75324EF651B00AD120E /* ZYHike.swift in Sources */,
 				8BC5D75824EF66EF00AD120E /* ZYHikeDetail.swift in Sources */,
 				8BC5D74924EF616700AD120E /* ZYBadgeBackground.swift in Sources */,
 				8BC5D74724EF59E700AD120E /* ZYHexagonParamters.swift in Sources */,
+				8B9F7B6424F351520099370F /* CategoryItem.swift in Sources */,
 				8B68F1E224ECFB2D00D6D273 /* SceneDelegate.swift in Sources */,
+				8B9F7B6B24F364430099370F /* ProfileSummary.swift in Sources */,
 				8BC5D75624EF655600AD120E /* ZYGraphCapsule.swift in Sources */,
 				8BC5D6FF24EE19FB00AD120E /* ZYLandmark.swift in Sources */,
 				8BC5D71E24EE4D1100AD120E /* ZYLandmarkRow.swift in Sources */,
 				8B68F1F424ED03E900D6D273 /* ZYCircleImage.swift in Sources */,
+				8B9F7B6924F3619F0099370F /* Profile.swift in Sources */,
 				8BC5D71C24EE480A00AD120E /* ZYData.swift in Sources */,
 				8BC5D74F24EF64A700AD120E /* ZYHikeView.swift in Sources */,
 				8B68F1F824ED057800D6D273 /* ZYMapView.swift in Sources */,
@@ -305,6 +332,7 @@
 				8BC5D74124EE7AF400AD120E /* UserData.swift in Sources */,
 				8BC5D74B24EF61ED00AD120E /* ZYBadgeSymbol.swift in Sources */,
 				8B68F1E424ECFB2D00D6D273 /* ZYLandmarkDetail.swift in Sources */,
+				8B9F7B6D24F383EF0099370F /* ProfileEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

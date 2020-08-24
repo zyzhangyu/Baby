@@ -21,7 +21,7 @@ struct ZYLandmarkList: View {
 //        }
         
         
-        NavigationView {
+//        NavigationView {
 //            List.init(landmarkData) {landmark in
 //                if !self.showFavoritesOnly || landmark.isFavorite {
 //                    NavigationLink.init(destination: ZYLandmarkDetail(landmark: landmark)) {
@@ -49,13 +49,16 @@ struct ZYLandmarkList: View {
 
             
         }
-    }
+//    }
 }
 
 struct ZYLandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        ZYLandmarkList()
-            .environmentObject(UserData())
+        NavigationView {
+            ZYLandmarkList()
+                .environmentObject(UserData())
+        }
+
 //        ForEach(["iPhone SE", "iPhone XS Max", "iPad Pro (12.9-inch)"], id: \.self) { deviceName in
 //            ZYLandmarkList()
 //                .environmentObject(UserData())
