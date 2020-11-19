@@ -1,0 +1,16 @@
+PODS:
+  - BMKLocationKit (2.0.0)
+
+DEPENDENCIES:
+  - BMKLocationKit
+
+SPEC REPOS:
+  trunk:
+    - BMKLocationKit
+
+SPEC CHECKSUMS:
+  BMKLocationKit: 097814ef672b1e57e86e6c1968d7892fb78002bf
+
+PODFILE CHECKSUM: 4d1fb979bb393eb3d9e13ac20470301bbdec810e
+
+COCOAPODS: 1.9.3
