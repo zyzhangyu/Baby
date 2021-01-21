@@ -59,7 +59,8 @@ void RenderScene(void){
     m3dMatrixMultiply44(mFinalTransform, mTransfromMatrix, mRotationMatix);
 
     
-    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, mTransfromMatrix,vColor);
+    ///GLT_SHADER_FLAT平面着色器  区别于之前使用过的单元着色器  IDENTITY
+    shaderManager.UseStockShader(GLT_SHADER_FLAT, mTransfromMatrix,vColor);
     
     triangleBatch.Draw();
     ///  前后台 双层 缓冲, 后台渲染  前台展示
